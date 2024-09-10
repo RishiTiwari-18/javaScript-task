@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 8vw 10vw;
+    text-transform: capitalize;
+}
+
+button{
+    cursor: pointer;
+    padding: 14px 22px ;
+    border-radius: 5px;
+    background-color: #dadada;
+    border: none;
+    margin-top: 30px;
+}
+
+p{
+    line-height: 35px;
+    letter-spacing: .8px;
+}
+
