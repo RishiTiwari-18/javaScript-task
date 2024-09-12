@@ -13,4 +13,4 @@ intervel = setInterval(function(){
     progress.style.width = count + "%"
     }
 
-}, 100)
+}, 50)
