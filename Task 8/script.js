@@ -18,10 +18,29 @@ data.forEach((elem) => {
                 </div>`
 })
 
-
 people.innerHTML = person
 
 
-input.
+
+
+
+input.addEventListener("input", function(){
+    let matching = data.filter(function(e){
+        return e.name.toLocaleLowerCase().startsWith(input.value.toLocaleLowerCase())
+    })
+
+    let newUser = ""
+    matching.forEach((elem) => {
+        newUser += `                <div class="person">
+                        <div class="img">
+                            <img src="${elem.src}" alt="">
+                        </div>
+                        <h3>${elem.name}</h3>
+                    </div>`
+    })
+    people.innerHTML = newUser
+})
+
+
 
 
